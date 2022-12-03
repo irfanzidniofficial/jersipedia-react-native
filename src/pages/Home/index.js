@@ -1,20 +1,16 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
-
-const Home = () => {
-  return (
-    <View style={styles.pages}>
-      <Text>Home Screen</Text>
-    </View>
-  );
-};
+import {Text, View} from 'react-native';
+import React, {Component} from 'react';
+import {BannerSlider, HeaderComponent} from '../../components';
+export class Home extends Component {
+  render() {
+    return (
+      <View>
+        <HeaderComponent />
+        <BannerSlider />
+        <Text>Home</Text>
+      </View>
+    );
+  }
+}
 
 export default Home;
-
-const styles = StyleSheet.create({
-  pages: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

@@ -13,7 +13,7 @@ const MainApp = () => {
     <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
       <Tab.Screen name="Home" component={Home} options={{headerShown: false}} />
       <Tab.Screen
-        name="ListJersey"
+        name="Jersey"
         component={ListJersey}
         options={{headerShown: false}}
       />
