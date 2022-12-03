@@ -25,7 +25,7 @@ export default HeaderComponent;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.primary,
-    height: responsiveHeight(125),
+    height: responsiveHeight(130),
   },
   wrapperHeader: {
     marginTop: 15,

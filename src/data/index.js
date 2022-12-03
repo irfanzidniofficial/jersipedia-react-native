@@ -1,1 +1,1 @@
-export * from './DummyLigas';
+export * from './dummyLigas';

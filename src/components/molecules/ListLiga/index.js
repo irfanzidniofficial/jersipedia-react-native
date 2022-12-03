@@ -1,14 +1,23 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {StyleSheet, View} from 'react-native';
+import {CardLiga} from '../../atoms';
 
-const ListLiga = () => {
+const ListLiga = ({ligas}) => {
   return (
-    <View>
-      <Text>ListLiga</Text>
+    <View style={styles.container}>
+      {ligas.map(liga => {
+        return <CardLiga liga={liga} key={liga.id} />;
+      })}
     </View>
   );
 };
 
 export default ListLiga;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 10,
+  },
+});
